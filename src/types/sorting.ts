@@ -1,13 +1,18 @@
+export interface Step {
+  arrayState: number[];
+  activeIndices: number[];
+  swapLabel: string;
+}
+
 export interface Pass {
-    passNumber: number;
-    comparisons: number;
-    swaps: number;
-    arrayState: number[];
-    finalIndex: number;
-    activeIndices: number[];
+  passNumber: number;
+  comparisons: number;
+  swaps: number;
+  steps: Step[];
+  finalIndex: number;
 }
 
 export interface SortTrace {
-    passes: Pass[];
-    array: number[];
+  passes: Pass[];
+  array: number[];
 }

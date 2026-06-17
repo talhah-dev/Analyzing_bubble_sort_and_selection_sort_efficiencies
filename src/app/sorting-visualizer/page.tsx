@@ -25,9 +25,12 @@ export default function SortingVisualizerPage() {
         <div className="min-h-screen bg-background text-foreground">
             <div className="max-w-7xl mx-auto px-4 py-10 space-y-10">
                 <div className="space-y-1">
-                    <h1 className="text-3xl font-bold tracking-tight">Sorting Visualizer</h1>
+                    <h1 className="text-3xl font-bold tracking-tight">
+                        Bubble Sort and Selection Sort Efficiency Analyzer
+                    </h1>
                     <p className="text-muted-foreground text-sm">
-                        Compare Bubble Sort and Selection Sort side by side
+                        Compare Bubble Sort and Selection Sort side by side to study comparisons,
+                        swaps, and case behavior.
                     </p>
                 </div>
 

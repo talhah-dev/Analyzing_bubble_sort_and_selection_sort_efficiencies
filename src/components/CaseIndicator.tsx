@@ -42,7 +42,7 @@ export function CaseIndicator({ bubbleTrace, selectionTrace }: Props) {
             <Card>
                 <CardHeader className="pb-2">
                     <CardTitle className="text-sm font-medium text-muted-foreground">
-                        Bubble Sort — Case Analysis
+                        Bubble Sort: Case Analysis
                     </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -55,7 +55,7 @@ export function CaseIndicator({ bubbleTrace, selectionTrace }: Props) {
             <Card>
                 <CardHeader className="pb-2">
                     <CardTitle className="text-sm font-medium text-muted-foreground">
-                        Selection Sort — Case Analysis
+                        Selection Sort: Case Analysis
                     </CardTitle>
                 </CardHeader>
                 <CardContent>
