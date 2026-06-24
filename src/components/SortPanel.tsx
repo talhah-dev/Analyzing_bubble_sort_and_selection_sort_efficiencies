@@ -33,6 +33,7 @@ export function SortPanel({ title, trace }: Props) {
                                             <SortBar
                                                 key={idx}
                                                 value={value}
+                                                isFinal={idx === pass.finalIndex}
                                                 maxValue={maxValue}
                                                 isActive={step.activeIndices.includes(idx)}
                                             />
@@ -62,6 +63,10 @@ export function SortPanel({ title, trace }: Props) {
                     <span className="flex items-center gap-1">
                         <span className="w-3 h-3 rounded-sm bg-zinc-500 inline-block" />
                         Active
+                    </span>
+                    <span className="flex items-center gap-1">
+                        <span className="w-3 h-3 rounded-sm bg-emerald-500 inline-block" />
+                        Final Position
                     </span>
                 </div>
             </CardContent>

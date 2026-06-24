@@ -36,7 +36,7 @@ export function ArrayInput({ onSort }: Props) {
     }
 
     function handleRandom() {
-        const random = Array.from({ length: 8 }, () => Math.floor(Math.random() * 100) + 1);
+        const random = Array.from({ length: 3 }, () => Math.floor(Math.random() * 100) + 1);
         setValue(random.join(", "));
         setError("");
         onSort(random);

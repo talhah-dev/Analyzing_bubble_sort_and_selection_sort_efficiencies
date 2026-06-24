@@ -2,11 +2,12 @@ import { cn } from "@/lib/utils";
 
 interface Props {
     value: number;
+    isFinal: boolean;
     isActive: boolean;
     maxValue: number;
 }
 
-export function SortBar({ value, isActive, maxValue }: Props) {
+export function SortBar({ value, isFinal, isActive, maxValue }: Props) {
     const heightPercent = Math.max((value / maxValue) * 100, 8);
 
     return (
@@ -16,7 +17,11 @@ export function SortBar({ value, isActive, maxValue }: Props) {
                 style={{ height: `${heightPercent * 1.8}px` }}
                 className={cn(
                     "w-10 rounded-md transition-all duration-300",
-                    isActive ? "bg-zinc-500" : "bg-black dark:bg-zinc-950"
+                    isFinal
+                        ? "bg-emerald-500"
+                        : isActive
+                            ? "bg-zinc-500"
+                            : "bg-black dark:bg-zinc-950"
                 )}
             />
         </div>
